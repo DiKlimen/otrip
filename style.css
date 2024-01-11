@@ -1,0 +1,165 @@
+@font-face {
+    font-family: 'Popins';
+    src: url('/fonts/Poppins-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Popins';
+    src: url('/fonts/Poppins-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Popins';
+    src: url('/fonts/Poppins-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* *, ::before, ::after { outline: 2px solid red }; */
+
+/* Начало нормализации блочной модели */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  Убираем внутренние отступы слева тегам списков,
+  у которых есть атрибут class
+ */
+:where(ul, ol):where([class]) {
+  padding-left: 0;
+}
+
+/*
+  Убираем внешние отступы body и двум другим тегам,
+  у которых есть атрибут class
+ */
+body,
+:where(blockquote, figure):where([class]) {
+  margin: 0;
+}
+
+/*
+  Убираем внешние отступы вертикали нужным тегам,
+  у которых есть атрибут class
+*/
+:where(
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul,
+  ol,
+  dl
+):where([class]) {
+  margin-block: 0;
+}
+
+:where(dd[class]) {
+  margin-left: 0;
+}
+
+/*
+  Убираем стандартный маркер маркированному списку,
+  у которого есть атрибут class
+ */
+:where(ul[class]) {
+  list-style: none;
+}
+
+/*
+  Упрощаем работу с изображениями
+ */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Наследуем свойства шрифт для полей ввода */
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+html {
+  /*
+    Пригодится в большинстве ситуаций
+    (когда, например, нужно будет "прижать" футер к низу сайта)
+   */
+  height: 100%;
+  /*
+    Плавный скролл
+   */
+  scroll-behavior: smooth;
+}
+
+body {
+  /*
+    Пригодится в большинстве ситуаций
+    (когда, например, нужно будет "прижать" футер к низу сайта)
+   */
+  min-height: 100%;
+  /*
+    Унифицированный интерлиньяж
+   */
+  line-height: 1.5;
+}
+
+/*
+  Удаляем все анимации и переходы для людей,
+  которые предпочитают их не использовать
+ */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Конец нормализации блочной модели */
+
+/* Начало утилитарных блоков */
+
+:root {
+    --color-white: #fff;
+    --almost-white: #FDFEFF;
+    --color-gray: #666;
+    --color-charcoal-black: #201F21;
+    --color-half-transparent-white: rgba(255, 255, 255, 0.50);
+    --color-fiery-red: #E73827;
+    --color-deep-violet: #4D3CA2;
+    --color-soft-pink: #FB8194;
+    --color-blue: #3E51FF;
+
+    --button-gradient: linear-gradient(90deg, #F85032 0%, #E73827 100%);
+
+    --forn-family: 'Popins', sans-serif;
+
+    --container-width: 1160px;
+    --container-padding-x: 15px;
+
+    --transition-duration: 0.2s;
+
+    --button-height: 52px;
+    --button-height-big: 72px;
+    --input-height: 56px;
+    --input-border: 1px solid #646464;
+    --input-radius: 10px;
+ }
