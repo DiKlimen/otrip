@@ -47,32 +47,35 @@
         <h1 class="main-title"></h1>
         <section class="hero container">
             <h2 class="hero-title visually-hidden">Hero title</h2>
-            <p class="hero-decorative-title">Discover beautiful places in the new world</p>
+            <p class="hero-decorative-title"><span>Discover</span> beautiful places in the new world</p>
             <p class="hero-description">Find vacation spots in various worlds with your family and feel the beauty that you have never felt before</p>
             <form class="hero-form">
                 <div class="hero-form-select-wrap">
                     <label for="destination">Destination</label>
                     <select class="hero-form-select" name="destination" id="destination">
-                        <option value="mail">Green Land</option>
+                        <option value="Green Land" selected>Green Land</option>
+                        <option value="Australia">Australia</option>
                     </select>
                 </div>
                 <div class="hero-form-select-wrap">
                     <label for="price">Average Price</label>
                     <select class="hero-form-select" name="price" id="price">
-                        <option value="mail">Green Land</option>
+                        <option value="300-400" selected>$300 - $400</option>
+                        <option value="400-600">$400 - $600</option>
                     </select>
                 </div>
                 <div class="hero-form-select-wrap">
                     <label for="date">Date</label>
                     <select class="hero-form-select" name="date" id="date">
-                        <option value="mail">23 Mey 2022</option>
+                        <option value="2022-05-23">23 Mey 2022</option>
                     </select>
                 </div>
                 <button class="hero-form-button button" type="submit">Search</button>
             </form>
             <div class="hero-video-wrapper">
                 <div class="hero-video-inner">
-                    <video class="hero-video" src="/" width="698" height="835" poster="./images/video-placeholder.jpg"></video>
+                    <video class="hero-video" src="/" width="698" height="835" poster="/"></video>
+                    <button class="hero-video-play-button"></button>
                 </div>
             </div>
             <div class="hero-visitors-wrapper">
@@ -80,26 +83,26 @@
                 <ul class="hero-visitors-list">
                     <li class="hero-visitors-item">
                         <img class="hero-visitors-avatar"
-                          src=""
-                          width=""
-                          height=""
-                          alt="">
+                          src="./images/people/people1.avif"
+                          width="50"
+                          height="50"
+                          alt="people">
                     </li>
                     <li class="hero-visitors-item">
                         <img class="hero-visitors-avatar"
-                          src=""
-                          width=""
-                          height=""
-                          alt="">
+                          src="./images/people/people2.avif"
+                          width="50"
+                          height="50"
+                          alt="people">
                     </li>
                     <li class="hero-visitors-item">
                         <img class="hero-visitors-avatar"
-                          src=""
-                          width=""
-                          height=""
-                          alt="">
+                          src="./images/people/people4.avif"
+                          width="50"
+                          height="50"
+                          alt="people">
                     </li>
-                    <li class="hero-visitors-item">+42</li>
+                    <li class="hero-visitors-item"><span>+42</span></li>
                 </ul>
             </div>
         </section>
