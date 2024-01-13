@@ -155,7 +155,6 @@ body {
 
     --container-width: 1160px;
     --container-padding-x: 15px;
-    --header-min-height: 105px;
 
     --transition-duration: 0.2s;
 
@@ -228,6 +227,12 @@ body {
 }
 
 .header {
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+}
+
+.header-inner {
   padding-block: 24px;
   display: flex;
   align-items: center;
@@ -287,7 +292,7 @@ body {
 }
 
 .hero {
-  padding-top: 55px;
+  padding-top: 155px;
   padding-bottom: 70px;
   position: relative;
 }
@@ -332,7 +337,6 @@ body {
   top: 0;
   right: -125px;
   z-index: -1;
-  margin-top: calc(-1 * var(--header-min-height));
 }
 
 .hero-video-inner {
@@ -373,7 +377,8 @@ body {
 }
 
 @media (max-width: 1024px) {
-  .header {
+
+  .header-inner {
     column-gap: 30px;
     justify-content: space-between;
   }
