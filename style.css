@@ -298,6 +298,7 @@ body {
   padding-top: 155px;
   padding-bottom: 70px;
   position: relative;
+  margin-bottom: 72px;
 }
 
 .hero-decorative-title {
@@ -474,6 +475,70 @@ body {
   border: 2px solid var(--color-arctic-mist)
 }
 
+/* Sponsors */
+
+.sponsors {
+  padding-top: 20px;
+  margin-bottom: 135px;
+}
+
+.sponsors-description {
+  color: var(--color-charcoal-black);
+  margin-bottom: 42px;
+  text-align: center;
+}
+
+.sponsors-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 35px;
+  column-gap: 30px;
+  justify-content: space-between;
+}
+
+.sponsors-list-item {
+}
+
+.sponsors-list-item-imege {
+}
+
+/* Places */
+
+.places {
+  display: flex;
+  column-gap: 120px;
+}
+
+.places-body {
+}
+
+.places-title {
+  margin-top: 54px;
+  max-width: 430px;
+}
+
+.decorative-title {
+  font-weight: 600;
+  color: var(--color-charcoal-black);
+  font-size: 48px;
+  line-height: 1.25;
+}
+
+.places-passage {
+  max-width: 430px;
+}
+
+.places-button {
+}
+
+.button {
+}
+
+.places-pucture {
+  flex-shrink: 0;
+  margin-right: -30px;
+}
+
 @media (max-width: 1024px) {
 
   .header-inner {
@@ -497,6 +562,11 @@ body {
     max-width: 35%;
     font-size: 16px;
   }
+
+  .sponsors-list {
+    justify-content: center;
+    column-gap: 15px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -519,6 +589,8 @@ body {
 
   .hero {
     padding-top: 96px;
+    padding-bottom: 0;
+    margin-bottom: 45px;
   }
 
   .hero-form {
@@ -562,14 +634,31 @@ body {
     top: 90px;
   }
 
+  .hero-form-button {
+    font-size: 16px;
+  }
+
   .hero-video-wrapper {
     position: relative;
     right: auto;
     margin-inline: -15px;
+    margin-top: -400px;
+    margin-bottom: 25px;
   }
 
   .hero-video {
     width: 100%;
     height: 570px;
+    border-radius: 0;
+  }
+
+  .hero-video-play-button {
+    background-size: 82px 82px;
+    top: 77%;
+  }
+
+  .hero-visitors-title {
+    font-size: 14px;
+    margin-bottom: 16px;
   }
 }
