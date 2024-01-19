@@ -85,7 +85,7 @@ body,
  */
 img {
   display: block;
-  max-width: 100%;
+  /* max-width: 100%; */
 }
 
 /* Наследуем свойства шрифт для полей ввода */
@@ -205,19 +205,27 @@ body {
 }
 
 .button {
+  display: inline-block;
   color: var(--color-white);
   font-size: 16px;
+  line-height: normal;
   font-weight: 500;
   letter-spacing: 0.32px;
   text-transform: capitalize;
   border-radius: var(--button-border-radius);
   border: none;
-  padding: 16px 28px;
+  padding: 13px 28px;
   background: var(--button-gradient);
 }
 
 .button:hover {
   opacity: 0.9;
+}
+
+.transparent {
+  color: var(--color-fiery-red);
+  background: transparent;
+  border: 1px solid #E73827;
 }
 
 .visually-hidden {
@@ -514,9 +522,6 @@ body {
   margin-bottom: 128px;
 }
 
-.places-body {
-}
-
 .places-title {
   margin-top: 54px;
   max-width: 430px;
@@ -526,42 +531,44 @@ body {
 .decorative-title {
   font-weight: 600;
   color: var(--color-charcoal-black);
-  font-size: 48px;
+  font-size: clamp(23px, 3.33vw, 48px);
   line-height: 1.25;
 }
 
 .places-passage {
-  max-width: 430px;
+  min-width: 430px;
   margin-bottom: 56px;
 }
 
 .places-button {
+  margin-inline: auto;
 }
 
-.button {
-}
 
 .plasce-picture-wrapper {
+  display: flex;
   position: relative;
   flex-shrink: 0;
-}
-
-.places-pucture {
-  flex-shrink: 0;
-  margin-right: -220px;
-  display: inline-block;
-  position: relative;
   max-height: 609px;
+  left: 50px;
 }
 
-.places-pucture::before {
+.plasce-picture-wrapper::before {
   content: '';
+  z-index: 1;
   position: absolute;
   width: 417px;
   height: 227px;
   bottom: -5px;
   left: -155px;
   background: url('./images/places/places-icon.svg') 0 0/contain no-repeat;
+}
+
+.places-pucture {
+  flex-shrink: 0;
+  display: inline-block;
+  position: relative;
+
 }
 
 .places-image {
@@ -599,7 +606,129 @@ body {
   border-radius: 50%;
 }
 
+/* Best */
+
+.best {
+  display: flex;
+  padding-bottom: 170px;
+  column-gap: 35px;
+}
+.best-image-wrapper {
+  position: relative;
+}
+
+.best-image-picture {
+}
+
+.best-image {
+  width: 602px;
+  height: 554px;
+  border-radius: 24px;
+}
+
+.best-review {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  padding: 24px;
+  max-width: 305px;
+  background-color: var(--color-white);
+  box-shadow: 0px -2.129px 11.52px 0px rgba(0, 0, 0, 0.04), 0px -17px 92px 0px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  bottom: -50px;
+  left: -30px;
+}
+.best-review-author {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+}
+.best-review-image {
+  width: 54px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+.best-review-author-wrap {
+
+}
+.best-review-name {
+  font-weight: 500;
+  color: var(--color-charcoal-black);
+}
+.best-review-author-status {
+  text-transform: capitalize;
+  line-height: normal;
+}
+.best-review-text {
+  font-size: 16px;
+  line-height: normal;
+}
+
+.best-review-rating {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+.best-review-rating-list {
+  display: flex;
+  column-gap: 2px;
+}
+.best-review-rating-item {
+}
+.best-review-rating-image {
+}
+.best-review-rating-number {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: normal;
+  display: inline-flex;
+  align-items: center;
+}
+.best-body {
+  padding-top: 136px;
+}
+.best-title {
+  position: relative;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: var(--color-blue);
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.best-title::before {
+  content: '';
+  position: absolute;
+  width: 60px;
+  aspect-ratio: 1;
+  border: 1px solid var(--color-stub);
+  border-radius: 8px;
+  top: -100px;
+  background: url('./icons/medal.svg') center no-repeat;
+  background-size: 40px 40px;
+}
+
+.best-decorative-title {
+  margin-bottom: 24px;
+}
+
+.best-text {
+  margin-bottom: 48px;
+}
+.best-button-wrapp {
+  display: flex;
+  column-gap: 14px;
+}
+.best-button {
+  padding-inline: 26px;
+}
+
+
 @media (max-width: 1024px) {
+  .decorative-title {
+    max-width: 73%;
+  }
 
   .header-inner {
     column-gap: 30px;
@@ -631,9 +760,28 @@ body {
   .places {
     flex-direction: column;
   }
+
+  .places-body {
+    margin-bottom: 57px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .places-passage {
+    min-width: auto;
+    font-size: 16px;
+  }
+
+  .plasce-picture-wrapper {
+    left: 200px;
+  }
 }
 
 @media (max-width: 767px) {
+  .button {
+    font-size: 14px;
+  }
+
   .header {
     justify-content: space-between;
     padding-block: 10px;
@@ -724,5 +872,44 @@ body {
   .hero-visitors-title {
     font-size: 14px;
     margin-bottom: 16px;
+  }
+
+  .sponsors-description {
+    font-size: 16px;
+  }
+
+  .places-button {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .plasce-picture-wrapper {
+    left: 85px;
+  }
+
+  .plasce-picture-wrapper::before {
+    width: 222px;
+    height: 120px;
+    left: -85px;
+  }
+
+  .places-image {
+    width: 541px;
+    height: auto;
+  }
+
+  .places-users-list {
+    padding: 6px;
+  }
+
+  .places-users-image {
+    width: 33px;
+    height: 33px;
+  }
+
+  .places-users-item:before {
+    width: 15px;
+    height: 15px;
   }
 }
