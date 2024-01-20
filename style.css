@@ -199,6 +199,10 @@ body {
   line-height: 1.25;
  }
 
+ dd {
+  margin-left: 0;
+ }
+
  .container {
   max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
   margin-inline: auto;
@@ -735,6 +739,7 @@ body {
   padding-top: 72px;
   padding-bottom: 66px;
   background-color: var(--color-midnight-sapphire);
+  margin-bottom: 115px;
 }
 
 .destination-title {
@@ -820,6 +825,46 @@ body {
 .destination-button {
   margin-inline: auto;
   display: block;
+}
+
+/* Testimonials */
+
+.testimonials {
+  margin-bottom: 126px;
+  background-image: 
+  image-set(
+    url('./images/testimonials/map@1X.avif') type('image/avif') 2x,
+    url('./images/testimonials/map@2X.avif') type('image/avif') 1x,
+    url('./images/testimonials/map@1X.jpeg') 2x,
+    url('./images/testimonials/map@1X.jpeg') 1x
+  );
+  background-size: 894px 466px;
+  background-repeat: no-repeat;
+  background-position: calc(50% + 360px) 90%;
+}
+
+.testimonials-body {
+  max-width: 490px;
+}
+
+.testimonials-title {
+  margin-bottom: 24px;
+}
+
+.testimonial-text {
+  margin-bottom: 32px;
+}
+
+.testimonials-list {
+  display: grid;
+  grid-template-columns: 177px 1fr;
+  column-gap: 60px;
+}
+
+.testimonials-item dd {
+  font-size: 15px;
+  line-height: normal;
+  text-transform: capitalize;
 }
 
 
@@ -1092,6 +1137,7 @@ body {
   .destination {
     padding-top: 40px;
     padding-bottom: 64px;
+    margin-bottom: 95px;
   }
 
   .destination-title {
@@ -1119,6 +1165,38 @@ body {
 
   .destination-button {
     width: 100%;
+  }
+
+  .testimonials {
+    margin-bottom: 0;
+    padding-bottom: 290px;
+    background-size: 447px 233px;
+    background-repeat: no-repeat;
+    background-position: calc(50% - 20px) bottom;
+  }
+
+  .testimonials-body {
+    max-width: 100%;
+  }
+
+  .testimonials-title {
+    margin-bottom: 16px;
+  }
+
+  .testimonial-text {
+    font-size: 16px;
+  }
+
+  .testimonials-list {
+    grid-template-columns: 141px 183px;
+    column-gap: 11px;
+    align-items: center;
+    max-width: 340px;
+    margin-inline: auto;
+  }
+  
+  .testimonials-item dd {
+    font-size: 14px;
   }
 
 }
