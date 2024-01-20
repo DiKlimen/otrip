@@ -151,6 +151,7 @@ body {
     --color-misty-gray: #888888;
     --color-silver-chalice: #CECECE;
     --color-arctic-mist: #F3F8FA;
+    --color-midnight-sapphire: #000428;
 
     --button-gradient: linear-gradient(90deg, #F85032 0%, var(--color-fiery-red) 100%);
 
@@ -724,6 +725,109 @@ body {
   padding-inline: 26px;
 }
 
+.destination-list-item-image {
+  border-radius: 190.5px 190.5px 10px 10px;
+}
+
+/* Destination */
+
+.destination {
+  padding-top: 72px;
+  padding-bottom: 66px;
+  background-color: var(--color-midnight-sapphire);
+}
+
+.destination-title {
+  text-align: center;
+  margin-bottom: 87px;
+  color: var(--color-white);
+}
+
+.destination-title.decorative-title {
+  max-width: 100%; 
+}
+
+.destination-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  column-gap: 40px;
+  row-gap: 89px;
+  margin-bottom: 88px;
+}
+
+.destination-list-item {
+}
+.destination-list-item-picture {
+}
+
+.destination-list-item-image {
+  width: 360px;
+  height: 450px;
+}
+
+.destination-list-item-description {
+  padding: 16px 24px;
+  box-shadow: 0px -0.25px 11.144px 0px rgba(0, 0, 0, 0.04), 0px -2px 89px 0px rgba(0, 0, 0, 0.07);
+  background-color: var(--color-white);
+  border-radius: 16px;
+  max-width: 271px;
+  margin-inline: auto;
+  margin-top: -85px;
+  position: relative;
+}
+
+.destination-list-item-label {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: var(--color-fiery-red);
+  line-height: normal;
+  margin-bottom: 4px;
+}
+
+.destination-list-item-title {
+  text-transform: capitalize;
+  font-weight: 500;
+  line-height: normal;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.destination-list-item-info {
+  display: flex;
+  justify-content: space-between;
+}
+.destination-list-item-rating-list-wrap {
+  display: flex;
+  align-items: center;
+}
+.destination-list-item-rating-list {
+  display: flex;
+  margin-right: 8px;
+}
+.destination-list-item-info-rating {
+  font-size: 16px;
+  line-height: 1;
+}
+
+.destination-list-item-info-price {
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.destination-button {
+  margin-inline: auto;
+  display: block;
+}
+
+
+@media (max-width: 1200px) {
+  .destination-list {
+    justify-content: space-around;
+  }
+}
 
 @media (max-width: 1024px) {
   .decorative-title {
@@ -984,4 +1088,37 @@ body {
   .best-review-rating-number {
     font-size: 14px;
   }
+
+  .destination {
+    padding-top: 40px;
+    padding-bottom: 64px;
+  }
+
+  .destination-title {
+    margin-bottom: 53px;  
+  }
+
+  .destination-list {
+    flex-direction: column;
+    row-gap: 40px;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  .destination-list-item-image {
+    width: 335px;
+    height: 420px;
+    object-fit: cover;
+  }
+
+  .destination-list-item-description {
+    padding: 20px;
+    max-width: 288px;
+    margin-top: -85px;
+  }
+
+  .destination-button {
+    width: 100%;
+  }
+
 }
