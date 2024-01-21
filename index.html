@@ -210,13 +210,8 @@
         <section class="best container">
             <div class="best-image-wrapper">
                 <picture class="best-image-picture">
-                    <source srcset="
-                    ./images/best/best@1X.avif 1x, 
-                    ./images/best/best@2X.avif 2x" 
-                    type="image/avif">
-                    <img class="best-image" src="
-                    ./images/best/best@1X.jpg 1x,
-                    ./images/best/best@2X.jpg 2x" 
+                    <source srcset="./images/best/best@1X.avif 1x, ./images/best/best@2X.avif 2x" type="image/avif">
+                    <img class="best-image" src="./images/best/best@1X.jpg 1x, ./images/best/best@2X.jpg 2x" 
                     alt="test image" 
                     width="602" 
                     height="554">
@@ -694,6 +689,33 @@
                 </div>
             </div>
 
+        </section>
+        <section class="asks container">
+            <div class="asks-body">
+                <h2 class="asks-title decorative-title">What would you like to ask?</h2>
+                <p class="asks-text">We have customer service with a fast response by providing solutions so you don't have to wait long</p>
+                <div class="asks-author">
+                    <img class="asks-author-image"
+                      src="./images/people/people5.avif"
+                      width="50"
+                      height="50"
+                      alt=""
+                    >
+                    <div class="asks-author-text-wrapper">
+                        <p class="asks-author-name">Zinda Serena</p>
+                        <p class="asks-author-function">Founder Otrip</p>
+                    </div>
+                </div>
+            </div>
+            <form class="asks-form">
+                <label class="asks-form-label" for="name">Name</label>
+                <input class="asks-form-input" id="name" type="text" placeholder="Your Name">
+                <label class="asks-form-label" for="email">Email Address</label>
+                <input class="asks-form-input" id="email" type="email" placeholder="Your Email, Please">
+                <label class="asks-form-label" for="text">Question</label>
+                <textarea class="asks-form-text" name="text" id="text" cols="30" rows="5" placeholder="Your Question"></textarea>
+                <button class="asks-form-button button">Submit</button>
+            </form>
         </section>
     </main>
 </body>

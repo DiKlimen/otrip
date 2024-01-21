@@ -203,6 +203,18 @@ body {
   margin-left: 0;
  }
 
+ input,
+ textarea {
+  display: block;
+  width: 100%;
+  padding: 15px 24px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid var(--color-misty-gray);
+  line-height: normal;
+ }
+
+
  .container {
   max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
   margin-inline: auto;
@@ -861,12 +873,90 @@ body {
   column-gap: 60px;
 }
 
+.testimonials-item dt {
+  font-size: 32px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--color-charcoal-black);
+}
+
+.testimonials-item dt span {
+  color: var(--color-fiery-red);
+}
+
 .testimonials-item dd {
   font-size: 15px;
   line-height: normal;
   text-transform: capitalize;
 }
 
+/* Asks */
+
+.asks {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 65px;
+}
+
+.asks-body {
+  width: 495px;
+}
+
+.asks-title {
+  margin-bottom: 24px;
+}
+
+.asks-text {
+  margin-bottom: 155px;
+}
+
+.asks-author {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+}
+
+.asks-author-image {
+  border-radius: 50%;
+  display: inline-block;
+  width: 50px;
+  aspect-ratio: 1;
+}
+
+.asks-author-text-wrapper {
+}
+.asks-author-name {
+  font-weight: 500;
+  color: var(--color-charcoal-black);
+}
+.asks-author-function {
+  font-size: 16px;
+}
+
+.asks-form {
+  width: 478px;
+}
+
+.asks-form-label {
+  display: inline-block;
+  margin-bottom: 16px;
+  line-height: normal;
+  color: var(--color-charcoal-black);
+}
+
+.asks-form-input {
+  margin-bottom: 24px;
+}
+
+.asks-form-text {
+  margin-bottom: 32px;
+  height: 125px;
+}
+
+.asks-form-button {
+  margin-left: auto;
+  display: block;
+}
 
 @media (max-width: 1200px) {
   .destination-list {
@@ -1194,9 +1284,69 @@ body {
     max-width: 340px;
     margin-inline: auto;
   }
+
+  .testimonials-item dt {
+    font-size: 30px;
+  }
   
   .testimonials-item dd {
     font-size: 14px;
   }
 
+  .asks {
+    flex-direction: column;
+    margin-top: 68px;
+    row-gap: 48px;
+  }
+
+  .asks-body {
+    width: 100%;
+  }
+
+  .asks-title {
+    margin-bottom: 16px;
+  }
+
+  .asks-text {
+    margin-bottom: 48px;
+  }
+
+  .asks-author {
+    column-gap: 8px;
+  }
+
+  .asks-author-image {
+    width: 45px;
+    height: 45px;
+  }
+
+  .asks-author-name {
+    font-size: 16px;
+  }
+
+  .asks-author-function {
+    font-size: 14px;
+  }
+
+  .asks-form {
+    width: 100%;
+  }
+
+  .asks-form-label {
+    font-size: 16px;
+  }
+  
+  .asks-form-input {
+    margin-bottom: 24px;
+    font-size: 14px;
+  }
+  
+  .asks-form-text {
+    margin-bottom: 32px;
+    height: 125px;
+  }
+  
+  .asks-form-button {
+    width: 100%;
+  }
 }
