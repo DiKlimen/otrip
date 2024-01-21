@@ -335,14 +335,12 @@ body {
 }
 
 .hero-decorative-title {
-  /* font-size: 88px; */
   font-size: clamp(54px, 6.10vw, 88px);
   font-weight: 600;
   line-height: 1.1;
   letter-spacing: -3.52px;
   text-transform: capitalize;
   color: var(--color-charcoal-black);
-  /* max-width: 720px; */
   max-width: clamp(200px, 50vw, 720px);
   margin-bottom: 15px;
 }
@@ -964,9 +962,6 @@ body {
   margin-bottom: 95px;
 }
 
-.footer-body {
-}
-
 .footer-logo {
   margin-bottom: 40px;
 }
@@ -1000,9 +995,6 @@ body {
   column-gap: 100px;
 }
 
-.footer-navs-item {
-}
-
 .footer-navs-item-title {
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.50);
@@ -1017,9 +1009,6 @@ body {
   flex-direction: column;
   row-gap: 16px;
   text-transform: uppercase;
-}
-
-.footer-nav-item {
 }
 
 .footer-nav-link {
@@ -1147,7 +1136,6 @@ body {
 
   .header-nav-item {
     width: 100%;
-
   }
 
   .header-nav-link {
@@ -1514,8 +1502,6 @@ body {
   .footer-phones span {
     display: none;
   }
-
-
 
   .footer-navs-list {
     flex-wrap: wrap;
