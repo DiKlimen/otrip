@@ -462,7 +462,7 @@ body {
   transform: translate(-50%, -50%);
   background: url('./icons/play-icon.svg') no-repeat center/cover;
   border: none;
-  z-index: 300;
+  z-index: 90;
 }
 
 .hero-video-play-button:hover {
@@ -839,7 +839,7 @@ body {
     url('./images/testimonials/map@1X.avif') type('image/avif') 2x,
     url('./images/testimonials/map@2X.avif') type('image/avif') 1x,
     url('./images/testimonials/map@1X.jpeg') 2x,
-    url('./images/testimonials/map@1X.jpeg') 1x
+    url('./images/testimonials/map@2X.jpeg') 1x
   );
   background-size: 894px 466px;
   background-repeat: no-repeat;
@@ -1107,6 +1107,12 @@ body {
   }
 }
 
+@media (min-width: 768px) {
+  .popup {
+  display: none;
+  }
+}
+
 @media (max-width: 767px) {
   .noscroll {
     overflow: hidden;
@@ -1143,6 +1149,10 @@ body {
     color: var(--color-white);
     width: 100%;
     justify-content: center;
+  }
+
+  .header-nav-link::before {
+    display: none;
   }
 
   .header-burger-icon {
