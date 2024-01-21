@@ -877,6 +877,7 @@ body {
 
 .testimonials-item dd {
   font-size: 15px;
+  line-height: 1.4;
   text-transform: capitalize;
 }
 
