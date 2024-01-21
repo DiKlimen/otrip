@@ -12,8 +12,8 @@
             <a href="/" class="header-logo-link">
                 <img class="header-logo-image"
                 src="./images/Logo.svg"
-                width="47px"
-                height="17px"
+                width="47"
+                height="17"
                 alt="logo">
             </a>
             <nav class="header-nav">
@@ -36,18 +36,21 @@
                 </ul>
             </nav>
             <button class="header-button button" type="button">Join Member</button>
-            <img class="header-burger-icon"
-              src="./icons/burger.svg"
-              width="24"
-              height="24"
-              alt="burger-icon">
+            <a href="" class="header-burger-link">
+                <img class="header-burger-icon"
+                src="./icons/burger.svg"
+                width="24"
+                height="24"
+                alt="burger-icon">
+            </a>
         </div>
+        <div class="popup" id="popup"></div>
     </header>
     <main class="main">
-        <h1 class="main-title"></h1>
+        <h1 class="main-title visually-hidden">Orip</h1>
         <section class="hero container">
             <h2 class="hero-title visually-hidden">Hero title</h2>
-            <p class="hero-decorative-title"><span>Discover</span></br> beautiful places in the new world</p>
+            <p class="hero-decorative-title"><span>Discover</span><br> beautiful places in the new world</p>
             <p class="hero-description">Find vacation spots in various worlds with your family and feel the beauty that you have never felt before</p>
             <form class="hero-form">
                 <div class="hero-form-select-wrap">
@@ -155,18 +158,19 @@
                 <a href="/" class="places-button button">Reservation</a>
             </div>
             <div class="plasce-picture-wrapper">
-                <picture class="places-pucture">
+                <picture class="places-picture">
                     <source srcset="
                     ./images/places/places@1X.avif 1x, 
                     ./images/places/places@2X.avif 2x" 
                     type="image/avif">
-                    <img class="places-image" src="
-                    ./images/places/places@1X.jpg 1x,
+                    <img class="places-image" src="./images/places/places@1X.jpg" 
+                    srcset="
+                    ./images/places/places@1X.jpg 1x, 
                     ./images/places/places@2X.jpg 2x" 
                     alt="test image" 
                     width="830" 
                     height="609">
-                </picture>
+                </picture>                
                 <ul class="places-users-list">
                     <li class="places-users-item">
                         <a href="" class="places-users-link">
@@ -211,9 +215,9 @@
             <div class="best-image-wrapper">
                 <picture class="best-image-picture">
                     <source srcset="./images/best/best@1X.avif 1x, ./images/best/best@2X.avif 2x" type="image/avif">
-                    <img class="best-image" src="./images/best/best@1X.jpg 1x, ./images/best/best@2X.jpg 2x" 
-                    alt="test image" 
-                    width="602" 
+                    <img class="best-image" src="./images/best/best@1X.jpg" srcset="./images/best/best@1X.jpg 1x, ./images/best/best@2X.jpg 2x" 
+                    alt="test image"
+                    width="602"
                     height="554">
                 </picture>
                 <div class="best-review">
@@ -283,7 +287,7 @@
         </section>
         <section class="destination">
             <div class="destination-inner container">
-                <h2 class="destination-title decorative-title">Find your travel</br> destination</h2>
+                <h2 class="destination-title decorative-title">Find your travel<br> destination</h2>
                 <ul class="destination-list">
                     <li class="destination-list-item">
                         <picture class="destination-list-item-picture">
@@ -291,7 +295,7 @@
                             ./images/destination/destination1@1X.avif 1x, 
                             ./images/destination/destination1@2X.avif 2x" 
                             type="image/avif">
-                            <img class="destination-list-item-image" src="
+                            <img class="destination-list-item-image" src="./images/destination/destination1@1X.jpg" srcset="
                             ./images/destination/destination1@1X.jpg 1x,
                             ./images/destination/destination1@2X.jpg 2x" 
                             alt="test image" 
@@ -307,36 +311,36 @@
                                         <li class="destination-list-item-rating-list-star">
                                             <img class=""
                                               src="./icons/star-yellow.svg"
-                                              width=""
-                                              height=""
+                                              width="16"
+                                              height="16"
                                               alt="star">
                                         </li>
                                         <li class="destination-list-item-rating-list-star">
                                             <img class=""
                                               src="./icons/star-yellow.svg"
-                                              width=""
-                                              height=""
+                                              width="16"
+                                              height="16"
                                               alt="star">
                                         </li>
                                         <li class="destination-list-item-rating-list-star">
                                             <img class=""
                                               src="./icons/star-yellow.svg"
-                                              width=""
-                                              height=""
+                                              width="16"
+                                              height="16"
                                               alt="star">
                                         </li>
                                         <li class="destination-list-item-rating-list-star">
                                             <img class=""
                                               src="./icons/star-yellow.svg"
-                                              width=""
-                                              height=""
+                                              width="16"
+                                              height="16"
                                               alt="star">
                                         </li>
                                         <li class="destination-list-item-rating-list-star">
                                             <img class=""
                                               src="./icons/star-yellow.svg"
-                                              width=""
-                                              height=""
+                                              width="16"
+                                              height="16"
                                               alt="star">
                                         </li>
                                     </ul>
@@ -352,7 +356,7 @@
                             ./images/destination/destination2@1X.avif 1x, 
                             ./images/destination/destination2@2X.avif 2x" 
                             type="image/avif">
-                            <img class="destination-list-item-image" src="
+                            <img class="destination-list-item-image" src="./images/destination/destination2@1X.jpg" srcset="
                             ./images/destination/destination2@1X.jpg 1x,
                             ./images/destination/destination2@2X.jpg 2x" 
                             alt="test image" 
@@ -368,36 +372,36 @@
                                         <li class="destination-list-item-rating-list-star">
                                             <img class=""
                                               src="./icons/star-yellow.svg"
-                                              width=""
-                                              height=""
+                                              width="16"
+                                              height="16"
                                               alt="star">
                                         </li>
                                         <li class="destination-list-item-rating-list-star">
                                             <img class=""
                                               src="./icons/star-yellow.svg"
-                                              width=""
-                                              height=""
+                                              width="16"
+                                              height="16"
                                               alt="star">
                                         </li>
                                         <li class="destination-list-item-rating-list-star">
                                             <img class=""
                                               src="./icons/star-yellow.svg"
-                                              width=""
-                                              height=""
+                                              width="16"
+                                              height="16"
                                               alt="star">
                                         </li>
                                         <li class="destination-list-item-rating-list-star">
                                             <img class=""
                                               src="./icons/star-yellow.svg"
-                                              width=""
-                                              height=""
+                                              width="16"
+                                              height="16"
                                               alt="star">
                                         </li>
                                         <li class="destination-list-item-rating-list-star">
                                             <img class=""
                                               src="./icons/star-yellow.svg"
-                                              width=""
-                                              height=""
+                                              width="16"
+                                              height="16"
                                               alt="star">
                                         </li>
                                     </ul>
@@ -413,7 +417,7 @@
                             ./images/destination/destination3@1X.avif 1x, 
                             ./images/destination/destination3@2X.avif 2x" 
                             type="image/avif">
-                            <img class="destination-list-item-image" src="
+                            <img class="destination-list-item-image" src="./images/destination/destination3@1X.jpg" srcset="
                             ./images/destination/destination3@1X.jpg 1x,
                             ./images/destination/destination3@2X.jpg 2x" 
                             alt="test image" 
@@ -429,36 +433,36 @@
                                         <li class="destination-list-item-rating-list-star">
                                             <img class=""
                                               src="./icons/star-yellow.svg"
-                                              width=""
-                                              height=""
+                                              width="16"
+                                              height="16"
                                               alt="star">
                                         </li>
                                         <li class="destination-list-item-rating-list-star">
                                             <img class=""
                                               src="./icons/star-yellow.svg"
-                                              width=""
-                                              height=""
+                                              width="16"
+                                              height="16"
                                               alt="star">
                                         </li>
                                         <li class="destination-list-item-rating-list-star">
                                             <img class=""
                                               src="./icons/star-yellow.svg"
-                                              width=""
-                                              height=""
+                                              width="16"
+                                              height="16"
                                               alt="star">
                                         </li>
                                         <li class="destination-list-item-rating-list-star">
                                             <img class=""
                                               src="./icons/star-yellow.svg"
-                                              width=""
-                                              height=""
+                                              width="16"
+                                              height="16"
                                               alt="star">
                                         </li>
                                         <li class="destination-list-item-rating-list-star">
                                             <img class=""
                                               src="./icons/star-yellow.svg"
-                                              width=""
-                                              height=""
+                                              width="16"
+                                              height="16"
                                               alt="star">
                                         </li>
                                     </ul>
@@ -474,7 +478,7 @@
                             ./images/destination/destination4@1X.avif 1x, 
                             ./images/destination/destination4@2X.avif 2x" 
                             type="image/avif">
-                            <img class="destination-list-item-image" src="
+                            <img class="destination-list-item-image" src="./images/destination/destination4@1X.jpg" srcset="
                             ./images/destination/destination4@1X.jpg 1x,
                             ./images/destination/destination4@2X.jpg 2x" 
                             alt="test image" 
@@ -490,36 +494,36 @@
                                         <li class="destination-list-item-rating-list-star">
                                             <img class=""
                                               src="./icons/star-yellow.svg"
-                                              width=""
-                                              height=""
+                                              width="16"
+                                              height="16"
                                               alt="star">
                                         </li>
                                         <li class="destination-list-item-rating-list-star">
                                             <img class=""
                                               src="./icons/star-yellow.svg"
-                                              width=""
-                                              height=""
+                                              width="16"
+                                              height="16"
                                               alt="star">
                                         </li>
                                         <li class="destination-list-item-rating-list-star">
                                             <img class=""
                                               src="./icons/star-yellow.svg"
-                                              width=""
-                                              height=""
+                                              width="16"
+                                              height="16"
                                               alt="star">
                                         </li>
                                         <li class="destination-list-item-rating-list-star">
                                             <img class=""
                                               src="./icons/star-yellow.svg"
-                                              width=""
-                                              height=""
+                                              width="16"
+                                              height="16"
                                               alt="star">
                                         </li>
                                         <li class="destination-list-item-rating-list-star">
                                             <img class=""
                                               src="./icons/star-yellow.svg"
-                                              width=""
-                                              height=""
+                                              width="16"
+                                              height="16"
                                               alt="star">
                                         </li>
                                     </ul>
@@ -535,7 +539,7 @@
                             ./images/destination/destination5@1X.avif 1x, 
                             ./images/destination/destination5@2X.avif 2x" 
                             type="image/avif">
-                            <img class="destination-list-item-image" src="
+                            <img class="destination-list-item-image" src="./images/destination/destination5@1X.jpg" srcset="
                             ./images/destination/destination5@1X.jpg 1x,
                             ./images/destination/destination5@2X.jpg 2x" 
                             alt="test image" 
@@ -551,36 +555,36 @@
                                         <li class="destination-list-item-rating-list-star">
                                             <img class=""
                                               src="./icons/star-yellow.svg"
-                                              width=""
-                                              height=""
+                                              width="16"
+                                              height="16"
                                               alt="star">
                                         </li>
                                         <li class="destination-list-item-rating-list-star">
                                             <img class=""
                                               src="./icons/star-yellow.svg"
-                                              width=""
-                                              height=""
+                                              width="16"
+                                              height="16"
                                               alt="star">
                                         </li>
                                         <li class="destination-list-item-rating-list-star">
                                             <img class=""
                                               src="./icons/star-yellow.svg"
-                                              width=""
-                                              height=""
+                                              width="16"
+                                              height="16"
                                               alt="star">
                                         </li>
                                         <li class="destination-list-item-rating-list-star">
                                             <img class=""
                                               src="./icons/star-yellow.svg"
-                                              width=""
-                                              height=""
+                                              width="16"
+                                              height="16"
                                               alt="star">
                                         </li>
                                         <li class="destination-list-item-rating-list-star">
                                             <img class=""
                                               src="./icons/star-yellow.svg"
-                                              width=""
-                                              height=""
+                                              width="16"
+                                              height="16"
                                               alt="star">
                                         </li>
                                     </ul>
@@ -596,7 +600,7 @@
                             ./images/destination/destination6@1X.avif 1x, 
                             ./images/destination/destination6@2X.avif 2x" 
                             type="image/avif">
-                            <img class="destination-list-item-image" src="
+                            <img class="destination-list-item-image" src="./images/destination/destination6@1X.jpg" srcset="
                             ./images/destination/destination6@1X.jpg 1x,
                             ./images/destination/destination6@2X.jpg 2x" 
                             alt="test image" 
@@ -612,36 +616,36 @@
                                         <li class="destination-list-item-rating-list-star">
                                             <img class=""
                                               src="./icons/star-yellow.svg"
-                                              width=""
-                                              height=""
+                                              width="16"
+                                              height="16"
                                               alt="star">
                                         </li>
                                         <li class="destination-list-item-rating-list-star">
                                             <img class=""
                                               src="./icons/star-yellow.svg"
-                                              width=""
-                                              height=""
+                                              width="16"
+                                              height="16"
                                               alt="star">
                                         </li>
                                         <li class="destination-list-item-rating-list-star">
                                             <img class=""
                                               src="./icons/star-yellow.svg"
-                                              width=""
-                                              height=""
+                                              width="16"
+                                              height="16"
                                               alt="star">
                                         </li>
                                         <li class="destination-list-item-rating-list-star">
                                             <img class=""
                                               src="./icons/star-yellow.svg"
-                                              width=""
-                                              height=""
+                                              width="16"
+                                              height="16"
                                               alt="star">
                                         </li>
                                         <li class="destination-list-item-rating-list-star">
                                             <img class=""
                                               src="./icons/star-yellow.svg"
-                                              width=""
-                                              height=""
+                                              width="16"
+                                              height="16"
                                               alt="star">
                                         </li>
                                     </ul>
@@ -727,7 +731,7 @@
                   height="32"
                   alt="logo"
                 >
-                <p class="footer-text">Number 3891 Ranchview Dr. Richardson,</br> California 62639, Amerika Serikat Country</p>
+                <p class="footer-text">Number 3891 Ranchview Dr. Richardson,<br> California 62639, Amerika Serikat Country</p>
                 <div class="footer-contacts-wrapper">
                     <dl class="footer-email-wrapper">
                         <dt>Email Address</dt>
@@ -801,5 +805,6 @@
         </div>
         <p class="footer-copyright">Copy Right Otrip 2021-2022, All Rights Reserved</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
