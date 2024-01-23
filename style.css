@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: 'Popins';
     src: url('./fonts/Poppins-Regular.woff2') format('woff2');
     font-weight: 400;
@@ -20,6 +20,30 @@
     font-weight: 600;
     font-style: normal;
     font-display: swap;
+} */
+
+@font-face {
+  font-family: 'Popins';
+  src: url('./fonts/poppins-regular-english.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Popins';
+  src: url('./fonts/poppins-medium-english.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Popins';
+  src: url('./fonts/poppins-semmibold-english.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
 }
 
 /* *, ::before, ::after { outline: 2px solid red }; */
