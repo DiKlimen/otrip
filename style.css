@@ -468,8 +468,8 @@ body {
     image-set(
       url('./images/hero/hero-video-image@2X.avif') type('image/avif') 2x,
       url('./images/hero/hero-video-image@1X.avif') type('image/avif') 1x,
-      url('./images/hero/hero-video-image@2X.jpg') 2x,
-      url('./images/hero/hero-video-image@1X.jpg') 1x
+      url('./images/hero/hero-video-image@2X.jpg') type("image/jpeg") 2x,
+      url('./images/hero/hero-video-image@1X.jpg') type("image/jpeg") 1x
     );
     background-size: cover;
     z-index: -1;
